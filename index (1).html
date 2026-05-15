@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DHYEY KANSAGRA</title>
+    <meta name="description"
+      content="Portfolio of Dhyey Kansagra - Python Developer, Frontend Developer, AI/ML Enthusiast">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet">
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+    <canvas id="canvas-stars"></canvas>
+    <div id="cur"></div>
+    <div id="cur-blur"></div>
+
+    <!-- NAV -->
+    <nav id="navbar">
+      <a href="#hero" class="logo">DK</a>
+      <div class="nav-links" id="navLinks">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="burger" id="burger">
+        <span></span><span></span><span></span>
+      </div>
+    </nav>
+
+    <!-- HERO -->
+    <section id="hero">
+      <div class="hero-left">
+        <div class="hero-tag">✦ Available for opportunities</div>
+        <h1 class="hero-name">DHYEY<br><span class="grad">KANSAGRA</span></h1>
+        <p class="hero-sub">Python Developer &amp; Frontend Engineer with a
+          passion for AI/ML. Building intelligent, beautiful digital
+          experiences.</p>
+        <!-- <img src="astronaut.png" alt> -->
+        <a href="#projects" class="cta-btn">See My Work <span
+            class="cta-arrow">→</span></a>
+
+      </div>
+
+      <div class="hero-right">
+        <!-- <div class="orb orb1"></div> -->
+        <!-- <div class="orb orb2"></div> -->
+        <!-- <div class="orb orb3"></div> -->
+        <img src="dhhyey.png" id="astro" class="astro-img">
+      </div>
+      <!-- <img src="astronaut.png"> -->
+      <!-- <div class="hero-right"> -->
+      <!-- CSS Astronaut -->
+      <!-- <div class="orb orb1"></div> -->
+      <!-- <div class="orb orb2"></div> -->
+      <!-- <div class="orb orb3"></div> -->
+      <!-- <div class="asd"> -->
+      <!-- <img src="astronaut.png" alt=""> -->
+      <!-- </div> -->
+      <!-- Helmet -->
+      <!-- <div class="helmet"> -->
+      <!-- <div class="helmet-antenna"></div> -->
+      <!-- <div class="visor"></div> -->
+      <!-- </div> -->
+      <!-- Suit / Body -->
+      <!-- <div class="suit"> -->
+      <!-- <div class="suit-badge">DK</div> -->
+      <!-- <div class="suit-chest"></div> -->
+      <!-- <div class="arm-wrap"> -->
+      <!-- <div class="arm arm-l"><div class="glove glove-l"></div></div> -->
+      <!-- <div class="arm arm-r"><div class="glove glove-r"></div></div> -->
+      <!-- </div> -->
+      <!-- /<div class="jetpack"></div> -->
+      <!-- </div> -->
+      <!-- Legs -->
+      <!-- <div class="legs-wrap"> -->
+      <!-- <div class="leg"><div class="boot"></div></div> -->
+      <!-- <div class="leg"><div class="boot"></div></div> -->
+      <!-- </div> -->
+      <!-- </div> -->
+      <!-- </div> -->
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <h2 class="section-title"><span class="ghost">About</span>About Me</h2>
+      <div class="about-grid">
+        <div class="about-image">
+          <div class="avatar-wrap">
+            <div class="orbit1"><div class="about-dot"></div></div>
+            <div class="orbit2"></div>
+            <div class="avatar-circle">DK</div>
+          </div>
+        </div>
+        <div class="glass about-text">
+          <p>Motivated developer from <strong>Ahmedabad, Gujarat</strong>. BCA
+            student at <strong>Saurashtra University</strong>,
+            passionate about building scalable applications and intelligent
+            systems.</p>
+          <p>Currently interning at <strong>Amar InfoTech</strong>, where I work
+            on both Python/AI-ML workflows and frontend craftsmanship — bridging
+            the gap between data and design.</p>
+          <p>I love solving real-world problems using <strong>Python, Django,
+              React, and Machine Learning </strong> and I'm always exploring
+            new tech.</p>
+          <div class="about-badges">
+            <span class="badge">Python</span>
+            <span class="badge">Django</span>
+            <span class="badge">React</span>
+            <span class="badge">AI / ML</span>
+            <span class="badge">GSAP</span>
+            <span class="badge">Open to Work</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills">
+      <h2 class="section-title"><span class="ghost">Skills</span>Technical
+        Skills</h2>
+      <div class="skills-grid">
+        <div class="glass skill-group">
+          <h3>Languages</h3>
+          <div class="pills">
+            <span class="pill">Python</span>
+            <span class="pill">HTML5</span>
+            <span class="pill">CSS3</span>
+            <span class="pill">JavaScript</span>
+            <!-- <span class="pill">SQL</span> -->
+            <span class="pill">PHP</span>
+          </div>
+        </div>
+        <div class="glass skill-group">
+          <h3>Web &amp; Frameworks</h3>
+          <div class="pills">
+            <span class="pill">Django</span>
+            <span class="pill">Bootstrap</span>
+            <span class="pill">jQuery</span>
+            <span class="pill">React 19</span>
+            <span class="pill">GSAP</span>
+            <!-- <span class="pill">Vite</span>
+            <span class="pill">React Router DOM</span> -->
+          </div>
+        </div>
+        <div class="glass skill-group">
+          <h3>AI / ML &amp; Data</h3>
+          <div class="pills">
+            <span class="pill">NumPy</span>
+            <span class="pill">Pandas</span>
+            <span class="pill">Seaborn</span>
+            <span class="pill">Matplotlib</span>
+            <span class="pill">Scikit-learn</span>
+            <span class="pill">Power BI</span>
+            <span class="pill">Excel</span>
+          </div>
+        </div>
+        <div class="glass skill-group">
+          <h3>Tools &amp; Tech</h3>
+          <div class="pills">
+            <span class="pill">MySQL</span>
+            <span class="pill">Git</span>
+            <span class="pill">GitHub</span>
+            <span class="pill">Jupyter Notebook</span>
+            <span class="pill">VS Code</span>
+            <span class="pill">Figma</span>
+            <span class="pill">XAMPP</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+      <h2 class="section-title"><span class="ghost">Work</span>
+        Projects</h2>
+      <div class="proj-grid">
+
+        <div class="glass proj-card">
+          <div class="proj-tags"><span class="ptag">React 19</span><span
+              class="ptag">Vite</span><span class="ptag">EmailJS</span></div>
+          <h3>My Spiritual Foundation</h3>
+          <p class="proj-desc">Charitable Trust multi-page website with donation
+            form integration, automated donor emails via EmailJS, smooth scroll
+            animations, and Google Maps embed.</p>
+          <a href="https://spritual-foundation-dhyey.vercel.app/"
+            class="proj-link">View Project →</a>
+        </div>
+
+        <div class="glass proj-card">
+          <div class="proj-tags"><span class="ptag">Python</span><span
+              class="ptag">ML</span><span class="ptag">Power BI</span></div>
+          <h3>Colorectal Cancer Survival Prediction</h3>
+          <p class="proj-desc">ML model using Logistic Regression &amp; Random
+            Forest with end-to-end data preprocessing — missing value handling,
+            Z-score outlier removal, label encoding, and a Power BI dashboard
+            for clinical insights.</p>
+          <a href="#" class="proj-link">View Project →</a>
+        </div>
+
+        <div class="glass proj-card">
+          <div class="proj-tags"><span class="ptag">Django</span><span
+              class="ptag">Python</span><span class="ptag">SQLite</span></div>
+          <h3>College ERP System</h3>
+          <p class="proj-desc">Role-based dashboards for Students, Teachers
+            &amp; Admins. Automated attendance and marks tracking powered by
+            Django Signals and a clean admin interface.</p>
+          <a href="#" class="proj-link">View Project →</a>
+        </div>
+
+        <div class="glass proj-card">
+          <div class="proj-tags"><span class="ptag">HTML5</span><span
+              class="ptag">CSS3</span><span class="ptag">JS</span><span
+              class="ptag">GSAP</span></div>
+          <h3>We Think Elastic</h3>
+          <p class="proj-desc">Interactive business website featuring advanced
+            GSAP animations, reusable component architecture, and optimized
+            performance across all browsers and devices.</p>
+          <a href="https://we-think-elastic-dhyey.vercel.app/"
+            class="proj-link">View Project →</a>
+        </div>
+
+        <div class="glass proj-card">
+          <div class="proj-tags">
+            <span class="ptag">HTML5</span>
+            <span class="ptag">CSS3</span>
+            <span class="ptag">JavaScript</span>
+          </div>
+          <h3>KREY Coffee Shop</h3>
+          <p class="proj-desc">Premium coffee shop website with multi-page
+            navigation,
+            interactive cart system, gallery with category filters, menu with
+            add-to-cart
+            functionality, and fully responsive design.</p>
+          <a href="https://krey-coffee-shop-by-dhyey.vercel.app/"
+            class="proj-link">View Project →</a>
+        </div>
+
+        <div class="glass proj-card">
+          <div class="proj-tags"><span class="ptag">HTML5</span><span
+              class="ptag">CSS3</span><span class="ptag">Bootstrap</span></div>
+          <h3>TROPICO Fruits Shop</h3>
+          <p class="proj-desc">Responsive multi-page e-commerce storefront with
+            mobile-first design, intuitive navigation, accessible color schemes,
+            and Bootstrap grid layout system.</p>
+          <a href="https://tropico-fruits-by-dhyey.vercel.app/"
+            class="proj-link">View Project →</a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience">
+      <h2 class="section-title"><span
+          class="ghost">Journey</span>Experience</h2>
+      <div class="glass timeline-wrap">
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-date">Oct 2025 – Present</div>
+          <div class="tl-role">Python &amp; AI/ML Intern</div>
+          <div class="tl-company">Amar InfoTech · Ahmedabad, Gujarat</div>
+          <ul class="tl-points">
+            <li>Strengthened hands-on skills with NumPy, Pandas, and
+              Scikit-learn through real ML project tasks</li>
+            <li>Assisted in debugging and optimizing Python code across
+              data-driven workflows</li>
+            <li>Explored machine learning pipelines including preprocessing,
+              training, and evaluation</li>
+          </ul>
+        </div>
+        <!-- <div class="tl-item" style="margin-bottom:0;">
+          <div class="tl-dot"></div>
+          <div class="tl-date">Oct 2025 – Present</div>
+          <div class="tl-role">Frontend Developer Intern</div>
+          <div class="tl-company">Amar InfoTech · Ahmedabad, Gujarat</div>
+          <ul class="tl-points">
+            <li>Built responsive, cross-functional UI components using HTML5,
+              CSS3, JavaScript &amp; GSAP</li>
+            <li>Delivered polished frontend features as part of a team with
+              real-world project workflows</li>
+            <li>Improved performance and maintainability of existing frontend
+              codebases</li>
+          </ul>
+        </div> -->
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education">
+      <h2 class="section-title"><span
+          class="ghost">Learning</span>Education</h2>
+      <div class="edu-grid">
+        <div class="glass edu-card">
+          <div class="edu-year">2026</div>
+          <div class="edu-degree grad">BCA</div>
+          <div class="edu-school">Bachelor of Computer
+            Applications<br>Saurashtra University</div>
+        </div>
+        <div class="glass edu-card">
+          <div class="edu-year">2022</div>
+          <div class="edu-degree grad">HSC</div>
+          <div class="edu-school">Higher Secondary Certificate<br>Delta Science
+            School</div>
+        </div>
+        <div class="glass edu-card">
+          <div class="edu-year">2020</div>
+          <div class="edu-degree grad">SSC</div>
+          <div class="edu-school">Secondary School Certificate<br>Bhayavadar
+            Gurukul</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <h2 class="section-title"><span class="ghost">Connect</span>Get In
+        Touch</h2>
+      <div class="contact-grid">
+        <div class="glass">
+          <form action="https://formsubmit.co/dhyeykansagra.work@gmail.com"
+            method="POST" id="contact-form">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_subject"
+              value="New Contact from Portfolio">
+            <input type="hidden" name="_template" value="table">
+            <div class="form-group">
+              <input type="text" name="name" id="name" placeholder=" " required>
+              <label for="name">Your Name</label>
+            </div>
+            <div class="form-group">
+              <input type="email" name="email" id="email" placeholder=" "
+                required>
+              <label for="email">Email Address</label>
+            </div>
+            <div class="form-group">
+              <input type="text" name="subject" id="subject" placeholder=" "
+                required>
+              <label for="subject">Subject</label>
+            </div>
+            <div class="form-group">
+              <textarea name="message" id="message" placeholder=" "
+                required></textarea>
+              <label for="message">Your Message</label>
+            </div>
+            <button type="submit" class="submit-btn">Send Message </button>
+          </form>
+        </div>
+        <div class="contact-info">
+          <div class="ci-item">
+            <h4>Email</h4>
+            <a
+              href="mailto:dhyeykansagra.work@gmail.com">dhyeykansagra.work@gmail.com</a>
+          </div>
+          <div class="ci-item">
+            <h4>Phone</h4>
+            <a href="tel:+917623079610">+91 76230 79610</a>
+          </div>
+          <div class="ci-item">
+            <h4>Location</h4>
+            <span style="color:var(--text-muted)"><a>Ahmedabad, Gujarat,
+              India</a></span>
+          </div>
+          <div class="ci-item">
+            <h4>Follow Me</h4>
+            <div class="socials">
+              <a href="https://linkedin.com/in/dhyeykansagra" target="_blank"
+                class="soc"><i class="fa-brands fa-square-linkedin"></i></a>
+              <a href="https://github.com/Dhyey-Kansagra" target="_blank"
+                class="soc"><i class="fa-brands fa-github"></i></a>
+                <a href="https://wa.me/917623079610" target="_blank" class="soc"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>Designed &amp; Built by <span
+          style="color:var(--primary);font-weight:600;">Dhyey Kansagra</span>&nbsp; <span style="color:var(--accent);">2026</span></p>
+    </footer>
+
+    <div id="toast">Message Sent! 🚀</div>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
