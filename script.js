@@ -115,3 +115,4 @@ if(form) {
     setTimeout(() => gsap.to(toast, {y:120, opacity:0, duration:0.4, ease:"power3.in"}), 3000);
   });
 }
+});
