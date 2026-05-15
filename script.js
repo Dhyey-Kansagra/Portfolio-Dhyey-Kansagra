@@ -85,34 +85,34 @@ document.addEventListener('DOMContentLoaded', () => {
     card.addEventListener('mouseleave', () => gsap.to(card, {y:0, duration:0.35, ease:"power2.out", borderColor:"rgba(255,255,255,0.1)", boxShadow:"none"}));
   });
 
-//   // --- CONTACT FORM ---
-//   const form = document.getElementById('contact-form');
-//   const toast = document.getElementById('toast');
-//   if(form) {
-//     form.addEventListener('submit', async (e) => {
-//       e.preventDefault();
-//       const fd = new FormData(form);
-//       try {
-//         const r = await fetch(form.action, {method:'POST', body:fd, headers:{'Accept':'application/json'}});
-//         if(r.ok) {
-//           form.reset();
-//           gsap.to(toast, {y:0, opacity:1, duration:0.5, ease:"back.out(1.7)"});
-//           setTimeout(() => gsap.to(toast, {y:120, opacity:0, duration:0.4, ease:"power3.in"}), 3000);
-//         }
-//       } catch(err) { console.error(err); }
-//     });
-//   }
+  // --- CONTACT FORM ---
+  const form = document.getElementById('contact-form');
+  const toast = document.getElementById('toast');
+  if(form) {
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const fd = new FormData(form);
+      try {
+        const r = await fetch(form.action, {method:'POST', body:fd, headers:{'Accept':'application/json'}});
+        if(r.ok) {
+          form.reset();
+          gsap.to(toast, {y:0, opacity:1, duration:0.5, ease:"back.out(1.7)"});
+          setTimeout(() => gsap.to(toast, {y:120, opacity:0, duration:0.4, ease:"power3.in"}), 3000);
+        }
+      } catch(err) { console.error(err); }
+    });
+  }
 
-// });
+});
 
 // --- CONTACT FORM ---
-const form = document.getElementById('contact-form');
-const toast = document.getElementById('toast');
-if(form) {
-  form.addEventListener('submit', function(e) {
-    // e.preventDefault() નથી — normal submit થવા દો
-    gsap.to(toast, {y:0, opacity:1, duration:0.5, ease:"back.out(1.7)"});
-    setTimeout(() => gsap.to(toast, {y:120, opacity:0, duration:0.4, ease:"power3.in"}), 3000);
-  });
-}
-});
+// const form = document.getElementById('contact-form');
+// const toast = document.getElementById('toast');
+// if(form) {
+//   form.addEventListener('submit', function(e) {
+//     // e.preventDefault() નથી — normal submit થવા દો
+//     gsap.to(toast, {y:0, opacity:1, duration:0.5, ease:"back.out(1.7)"});
+//     setTimeout(() => gsap.to(toast, {y:120, opacity:0, duration:0.4, ease:"power3.in"}), 3000);
+//   });
+// }
+// });
