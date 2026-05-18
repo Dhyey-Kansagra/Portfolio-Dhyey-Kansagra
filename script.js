@@ -46,6 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
   burger.addEventListener('click', () => { navLinks.classList.toggle('open'); });
   navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => navLinks.classList.remove('open')));
 
+  gsap.set(".hero-tag, .hero-name, .hero-sub, .cta-btn", {opacity:1, y:0, scale:1});
   // --- HERO ANIMATION ---
   gsap.timeline()
     .from(".hero-tag", {y:30, opacity:0, duration:0.8, ease:"power3.out"})
