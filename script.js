@@ -130,14 +130,14 @@ document.addEventListener('DOMContentLoaded', () => {
       emailjs.send("service_guwd5n8", "template_gl6cttk", templateParams)
         .then(() => {
           form.reset();
-          submitBtn.textContent = 'Send Message 🚀';
+          submitBtn.textContent = 'Send Message ';
           submitBtn.disabled = false;
           gsap.to(toast, {y:0, opacity:1, duration:0.5, ease:"back.out(1.7)"});
           setTimeout(() => gsap.to(toast, {y:120, opacity:0, duration:0.4, ease:"power3.in"}), 3000);
         })
         .catch((err) => {
           console.error('EmailJS Error:', err);
-          submitBtn.textContent = 'Send Message 🚀';
+          submitBtn.textContent = 'Send Message ';
           submitBtn.disabled = false;
           alert('Something went wrong. Please try again!');
         });
