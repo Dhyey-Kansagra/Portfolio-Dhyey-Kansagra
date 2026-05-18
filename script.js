@@ -86,24 +86,66 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // --- CONTACT FORM ---
+//   const form = document.getElementById('contact-form');
+//   const toast = document.getElementById('toast');
+//   if(form) {
+//     form.addEventListener('submit', async (e) => {
+//       e.preventDefault();
+//       const fd = new FormData(form);
+//       try {
+//         const r = await fetch(form.action, {method:'POST', body:fd, headers:{'Accept':'application/json'}});
+//         if(r.ok) {
+//           form.reset();
+//           gsap.to(toast, {y:0, opacity:1, duration:0.5, ease:"back.out(1.7)"});
+//           setTimeout(() => gsap.to(toast, {y:120, opacity:0, duration:0.4, ease:"power3.in"}), 3000);
+//         }
+//       } catch(err) { console.error(err); }
+//     });
+//   }
+
+// });
+
+
+ emailjs.init("iT3mxpomqO-8LbBrS");
+
   const form = document.getElementById('contact-form');
   const toast = document.getElementById('toast');
+  const submitBtn = form.querySelector('.submit-btn');
+
   if(form) {
-    form.addEventListener('submit', async (e) => {
+    form.addEventListener('submit', function(e) {
       e.preventDefault();
-      const fd = new FormData(form);
-      try {
-        const r = await fetch(form.action, {method:'POST', body:fd, headers:{'Accept':'application/json'}});
-        if(r.ok) {
+
+      const templateParams = {
+        from_name: document.getElementById('name').value,
+        from_email: document.getElementById('email').value,
+        subject: document.getElementById('subject').value,
+        message: document.getElementById('message').value,
+      };
+
+      submitBtn.textContent = 'Sending...';
+      submitBtn.disabled = true;
+
+      emailjs.send("service_guwd5n8", "template_gl6cttk", templateParams)
+        .then(() => {
           form.reset();
+          submitBtn.textContent = 'Send Message 🚀';
+          submitBtn.disabled = false;
           gsap.to(toast, {y:0, opacity:1, duration:0.5, ease:"back.out(1.7)"});
           setTimeout(() => gsap.to(toast, {y:120, opacity:0, duration:0.4, ease:"power3.in"}), 3000);
-        }
-      } catch(err) { console.error(err); }
+        })
+        .catch((err) => {
+          console.error('EmailJS Error:', err);
+          submitBtn.textContent = 'Send Message 🚀';
+          submitBtn.disabled = false;
+          alert('Something went wrong. Please try again!');
+        });
     });
   }
 
 });
+
+
 
 // --- CONTACT FORM ---
 // const form = document.getElementById('contact-form');
