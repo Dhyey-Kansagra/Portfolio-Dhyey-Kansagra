@@ -163,7 +163,7 @@ nav {
 /* SECTIONS */
 section {
   min-height: 100vh;
-  padding: 70px 6%;
+  padding: 30px 6%;
   display: flex;
   flex-direction: column;
   justify-content: center;
